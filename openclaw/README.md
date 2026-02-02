@@ -1,0 +1,3 @@
+- used as cli `openclaw`
+- publish on npmjs
+    - https://www.npmjs.com/package/openclaw
