@@ -1,3 +1,4 @@
+name: workflow agent (py)
 on: push
 
 jobs:

@@ -1,0 +1,22 @@
+{
+  "name": "@davidkhala/opencode",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidkhala/AI.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@opencode-ai/sdk": "latest"
+  },
+  "devDependencies": {
+    "mocha": "latest"
+  },
+  "type": "module"
+}
