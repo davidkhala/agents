@@ -1,0 +1,29 @@
+[project]
+name = "davidkhala.ai.agents"
+version = "0.0.0"
+description = "AI agents"
+readme = "README.md"
+requires-python = ">=3.12"
+[project.optional-dependencies]
+langchain = [
+    "langgraph", "langchain",
+    "langchain-openai ; python_version < '3.14'" # required by openRouter
+]
+ragflow = ["ragflow-sdk"]
+
+dify = ["dify-plugin", "davidkhala.utils[http_request]", "davidkhala.databases[pg]"]
+[tool.hatch.build.targets.sdist]
+include = ["davidkhala"]
+
+[tool.hatch.build.targets.wheel]
+include = ["davidkhala"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest", 'davidkhala-ai-models'
+]
+
